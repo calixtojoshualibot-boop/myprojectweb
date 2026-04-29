@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Vintage Cap Showcase System</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel - Vintage Collector System</h1>
+    <a href="/">Back to Collection</a>
+  </header>
+  <main>
+    <section id="item-form">
+      <h2>Add/Edit Item</h2>
+      <form id="itemForm">
+        <input type="hidden" id="itemId" name="id">
+        <label for="name">Cap Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="quality">Quality:</label>
+        <input type="text" id="quality" name="quality" required>
+        <label for="year">Year Released:</label>
+        <input type="number" id="year" name="year" required>
+        <label for="imageFile">Upload Cap Image:</label>
+        <input type="file" id="imageFile" name="imageFile" accept="image/*">
+        <small style="color: #666; margin-top: 0.3rem;">Upload a picture of the cap (JPG, PNG, GIF, etc.)</small>
+        <label for="image">Or paste Image URL:</label>
+        <input type="text" id="image" name="image" placeholder="https://example.com/cap-image.jpg">
+        <small style="color: #666; margin-top: 0.3rem;">Leave blank if uploading a file</small>
+        <button type="submit">Save Cap</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+      </form>
+    </section>
+    <section id="items-list">
+      <h2>Items</h2>
+      <div id="items-container"></div>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

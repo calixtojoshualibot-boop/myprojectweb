@@ -1,29 +1,19 @@
 {
-  "name": "react-vite-tailwind",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "vintage-cap-showcase-system",
+  "version": "1.0.0",
+  "description": "A vintage cap showcase system with HTML frontend and Node.js backend for managing and displaying vintage NBA team caps",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "clsx": "2.1.1",
-    "lucide-react": "^1.9.0",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "tailwind-merge": "3.4.0"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "4.1.17",
-    "@types/node": "22.19.17",
-    "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "5.1.1",
-    "tailwindcss": "4.1.17",
-    "typescript": "5.9.3",
-    "vite": "7.2.4",
-    "vite-plugin-singlefile": "2.3.0"
-  }
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["vintage", "cap", "showcase", "NBA", "system", "webapp"],
+  "author": "",
+  "license": "ISC"
 }
